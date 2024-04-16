@@ -1,4 +1,10 @@
-/** Add your relevant code here for the issue to reproduce */
+'use client';
+
+import { absoluteUrl, relativeUrl } from './action';
+
 export default function Home() {
-  return null;
+  return (<div>
+	<button onClick={() => absoluteUrl()}>Absolute URL Redirect</button>
+	<button onClick={() => relativeUrl()}>Relative URL Redirect</button>
+  </div>);
 }
